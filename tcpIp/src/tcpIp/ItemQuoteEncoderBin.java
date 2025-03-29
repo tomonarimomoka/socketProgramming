@@ -7,6 +7,9 @@ import java.io.IOException;
 public class ItemQuoteEncoderBin implements ItemQuoteEncoder , ItemQuoteBinConst{
 	private String encoding;
 	
+	public ItemQuoteEncoderBin() {
+		encoding = DEFAULT_ENCODING;
+	}
 	public ItemQuoteEncoderBin(String encoding) {
 		this.encoding = encoding;
 	}
